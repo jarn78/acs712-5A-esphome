@@ -2,7 +2,7 @@
 
 class ACS712Sensor : public PollingComponent {
    public:
-    ACS712 *ACS = new ACS712(A0, 3.3, 1023, 185);
+    ACS712 *ACS = new ACS712(A0, 3.3, 4095, 185);
     Sensor *current_sensor = new Sensor();
     Sensor *power_sensor = new Sensor();
 
