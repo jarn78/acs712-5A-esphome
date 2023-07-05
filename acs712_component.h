@@ -29,6 +29,6 @@ class ACS712Sensor : public PollingComponent {
         //ESP_LOGD("acs712", "Time: %d A: ", duration, amps);
 
         current_sensor->publish_state(amps);
-        power_sensor->publish_state(amps * 220);
+        power_sensor->publish_state(amps * 235);
     }
 };
